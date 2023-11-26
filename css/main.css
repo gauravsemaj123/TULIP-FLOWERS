@@ -1,0 +1,639 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.the-message {
+  overflow: hidden;
+  position: fixed;
+  background-color: transparent !important;
+  height: 150px;
+  width: 438px;
+  margin-left: 497px;
+ }
+ .the-message h4 {
+  position: relative;
+  width: 399px;
+  height: 562px;
+  margin: 0;
+  text-align: left;
+  transform:translateY(-100%);
+  animation: the-message 40s linear normal none;
+ }
+
+ @-moz-keyframes the-message {
+  0%   { -moz-transform: translateY(100%); }
+  100% { -moz-transform: translateY(-100%); }
+ }
+ @-webkit-keyframes the-message {
+  0%   { -webkit-transform: translateY(100%); }
+  100% { -webkit-transform: translateY(-100%); }
+ }
+ @keyframes the-message {
+  0%   {
+  transform: translateY(100%);
+  }
+  100% {
+  transform: translateY(-100%);
+  }
+ }
+
+.cover{
+  background-image: url("jilay.jpg");
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+button{
+  width: 130px;
+  height: 53px;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 691px;
+  margin-top: 550px;
+}
+
+:root{
+  --sky: linear-gradient(0deg, rgba(29,158,0,1) 0%, rgba(0,212,255,1) 11%, rgba(193,245,255,1) 61%, rgba(79,227,255,1) 80%, rgba(0,18,135,1) 100%);
+  --stemlf: linear-gradient(180deg, rgba(133,213,0,0.7198529069831057) 0%, rgba(94,218,0,1) 8%, rgba(87,173,0,1) 25%, rgba(29,158,0,1) 38%, rgba(54,45,0,1) 100%);
+}
+
+.container {width: 100%;}
+
+.spacing{
+  width: 588px;
+}
+
+body{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--sky)
+}
+
+.right{
+  float: right;
+}
+
+.clouds{
+  margin-bottom: 71px;
+  animation: clouds 25s ease 0s infinite normal none;
+}
+.clouds2{
+  margin-bottom: 245px;
+  animation: clouds2 30s ease 0s infinite normal none;
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+    }
+  10%{
+    opacity: 50;
+  }
+  15%{
+    opacity: 100;
+  }
+  85%{
+    opacity: 100;
+  }
+  90%{
+    opacity: 50;
+  }
+  100% {
+  transform: translateX(-100%);
+  opacity: 0;
+  }
+  }
+
+@keyframes clouds2 {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+    }
+  10%{
+    opacity: 50%;
+  }
+  15%{
+    opacity: 100;
+  }
+  85%{
+    opacity: 100;
+  }
+  90%{
+    opacity: 50;
+  }
+  100% {
+  transform: translateX(-100%);
+  opacity: 0;
+  }
+  }
+
+.tulipstem-a{
+  animation: tulipstem-a 10s ease 1s infinite normal none;
+  padding: 3px;
+  width: 2px;
+  height: 156px;
+  margin-bottom: -6px;
+  margin-left: 224px;
+  background: var(--stemlf)
+}
+
+.tulipstem-b{
+  animation: tulipstem-b 8s ease 1s infinite normal none;
+  padding: 3px;
+  width: 2px;
+  height: 91px;
+  margin-bottom: -71px;
+  margin-left: -97px;
+  background: var(--stemlf)
+}
+
+.tulipstem-c{
+  animation: tulipstem-c 9s ease 1s infinite normal none;
+  padding: 3px;
+  width: 2px;
+  height: 135px;
+  margin-left: -187px;
+  margin-bottom: -27px;
+  background: var(--stemlf)
+}
+
+.tulipstem-d{
+  animation: tulipstem-d 12s ease 1s infinite normal none;
+  padding: 3px;
+  width: 2px;
+  height: 135px;
+  margin-left: 701px;
+  margin-bottom: -16px;
+  background: var(--stemlf)
+}
+
+.tulipstem-e{
+  animation: tulipstem-e 11s ease 1s infinite normal none;
+  padding: 3px;
+  width: 2px;
+  height: 135px;
+  margin-left: 569px;
+  margin-bottom: -2px;
+  background: var(--stemlf)
+}
+
+
+@keyframes tulipstem-a {
+  0%,
+  100% {
+	transform: translateX(0%);
+	transform-origin: 50% 50%;
+  }
+
+  15% {
+	transform: translateX(-5px) rotate(-2deg);
+  }
+
+  30% {
+	transform: translateX(5px) rotate(2deg);
+  }
+
+  45% {
+	transform: translateX(-5px) rotate(-1.2deg);
+  }
+
+  60% {
+	transform: translateX(3px) rotate(1.2deg);
+  }
+
+  75% {
+	transform: translateX(-2px) rotate(-0.6deg);
+  }
+}
+
+@keyframes tulipstem-b {
+  0%,
+  100% {
+	transform: translateX(0%);
+	transform-origin: 50% 50%;
+  }
+
+  15% {
+	transform: translateX(-5px) rotate(-2deg);
+  }
+
+  30% {
+	transform: translateX(5px) rotate(2deg);
+  }
+
+  45% {
+	transform: translateX(-5px) rotate(-1.2deg);
+  }
+
+  60% {
+	transform: translateX(3px) rotate(1.2deg);
+  }
+
+  75% {
+	transform: translateX(-2px) rotate(-0.6deg);
+  }
+}
+
+@keyframes tulipstem-c {
+  0%,
+  100% {
+	transform: translateX(0%);
+	transform-origin: 50% 50%;
+  }
+
+  15% {
+	transform: translateX(-5px) rotate(-2deg);
+  }
+
+  30% {
+	transform: translateX(5px) rotate(2deg);
+  }
+
+  45% {
+	transform: translateX(-5px) rotate(-1.2deg);
+  }
+
+  60% {
+	transform: translateX(3px) rotate(1.2deg);
+  }
+
+  75% {
+	transform: translateX(-2px) rotate(-0.6deg);
+  }
+}
+
+@keyframes tulipstem-d {
+  0%,
+  100% {
+	transform: translateX(0%);
+	transform-origin: 50% 50%;
+  }
+
+  15% {
+	transform: translateX(-5px) rotate(-2deg);
+  }
+
+  30% {
+	transform: translateX(5px) rotate(2deg);
+  }
+
+  45% {
+	transform: translateX(-5px) rotate(-1.2deg);
+  }
+
+  60% {
+	transform: translateX(3px) rotate(1.2deg);
+  }
+
+  75% {
+	transform: translateX(-2px) rotate(-0.6deg);
+  }
+}
+
+
+.tulipflower-a{
+  animation: tulipstem-a 10s ease 1s infinite normal none;
+  padding-left: 10px;
+}
+.tulipflower-b{
+  animation: tulipstem-b 8s ease 1s infinite normal none;
+  padding-left: 10px;
+}
+.tulipflower-c{
+  animation: tulipstem-c 9s ease 1s infinite normal none;
+  padding-left: 10px;
+}
+.tulipflower-d{
+  animation: tulipstem-d 12s ease 1s infinite normal none;
+  padding-left: 10px;
+  margin-bottom: 122px;
+}
+
+/* FLOWERS A */
+.tfloleft-a {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  overflow: hidden;
+  margin-left: -11px;
+  margin-bottom: -62px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(82deg);
+}
+.tflocent-a {
+  display: flex;
+  height: 50px;
+  width: 105px;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-bottom: -37px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgb(244, 74, 159) 19%, rgb(241, 9, 125) 44%, rgb(194, 2, 98) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.tfloright-a {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  overflow: hidden;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(101deg);
+}
+/* FLOWERS B */
+.tfloleft-b {
+  display: flex;
+  height: 25px;
+  width: 50px;
+  overflow: hidden;
+  margin-left: -2px;
+  margin-bottom: -25px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(82deg);
+}
+.tflocent-b {
+  display: flex;
+  height: 25px;
+  width: 53px;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-bottom: -24px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgb(244, 74, 159) 19%, rgb(241, 9, 125) 44%, rgb(194, 2, 98) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.tfloright-b {
+  display: flex;
+  height: 25px;
+  width: 50px;
+  overflow: hidden;
+  margin-left: 8px;
+  margin-bottom: 0px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(101deg);
+}
+
+/* FLOWER C */
+.tfloleft-c {
+  display: flex;
+  height: 38px;
+  width: 75px;
+  overflow: hidden;
+  margin-left: -2px;
+  margin-bottom: -42px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(82deg);
+}
+.tflocent-c {
+  display: flex;
+  height: 38px;
+  width: 78px;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-bottom: -32px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgb(244, 74, 159) 19%, rgb(241, 9, 125) 44%, rgb(194, 2, 98) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.tfloright-c {
+  display: flex;
+  height: 38px;
+  width: 75px;
+  overflow: hidden;
+  margin-left: 8px;
+  margin-bottom: 0px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(101deg);
+}
+/* FLOWER D */
+.tfloleft-d {
+  display: flex;
+  height: 38px;
+  width: 75px;
+  overflow: hidden;
+  margin-left: -2px;
+  margin-bottom: -42px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(82deg);
+}
+.tflocent-d {
+  display: flex;
+  height: 38px;
+  width: 78px;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-bottom: -32px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgb(244, 74, 159) 19%, rgb(241, 9, 125) 44%, rgb(194, 2, 98) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.tfloright-d {
+  display: flex;
+  height: 38px;
+  width: 75px;
+  overflow: hidden;
+  margin-left: 8px;
+  margin-bottom: 0px;
+  background: linear-gradient(90deg, rgba(255,205,230,1) 0%, rgba(255,142,199,1) 19%, rgba(255,89,173,1) 44%, rgba(255,42,149,1) 73%, rgba(213,0,107,1) 100%);
+  border-radius: 50%;
+  transform: rotate(101deg);
+}
+
+/* TULIP LEAVES DAHIL MAHAL KITA JILAY */
+.tulipleaf-a {
+  animation: tulipstem-a ease 10s infinite normal none;
+  --w: 12vmin;
+  --h: 24vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 222px;
+  margin-bottom: 93px;
+}
+.tulipleafr-a {
+  animation: tulipstem-a ease 10s infinite normal none;
+  --w: 12vmin;
+  --h: 20vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-right-radius: 100%;
+  border-right: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 142px;
+  margin-bottom: 92px;
+}
+
+.tulipleaf-b {
+  animation: tulipstem-b ease 10s infinite normal none;
+  --w: 7vmin;
+  --h: 13vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: -101px;
+  margin-bottom: 94px;
+}
+.tulipleaf-c {
+  animation: tulipstem-c ease 10s infinite normal none;
+  --w: 8vmin;
+  --h: 17vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: -191px;
+  margin-bottom: 93px;
+}
+.tulipleafr-c {
+  animation: tulipstem-c ease 10s infinite normal none;
+  --w: 11vmin;
+  --h: 26vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-right-radius: 100%;
+  border-right: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: -259px;
+  margin-bottom: 93px;
+}
+.tulipleaf-d {
+  animation: tulipstem-d ease 10s infinite normal none;
+  --w: 8vmin;
+  --h: 17vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 702px;
+  margin-bottom: 93px;
+}
+.tulipleafr-d {
+  animation: tulipstem-d ease 10s infinite normal none;
+  --w: 11vmin;
+  --h: 20vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-right-radius: 100%;
+  border-right: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 626px;
+  margin-bottom: 93px;
+}
+
+/* GRASS */
+.g-a {
+  animation: tulipstem-a ease 10s infinite normal none;
+  --w: 11vmin;
+  --h: 26vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-right-radius: 100%;
+  border-right: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 79px;
+  margin-bottom: 93px;
+}
+.g-b {
+  animation: tulipstem-b ease 10s infinite normal none;
+  --w: 13vmin;
+  --h: 23vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 191px;
+  margin-bottom: 91px;
+}
+.g-c {
+  animation: tulipstem-c ease 10s infinite normal none;
+  --w: 8vmin;
+  --h: 22vmin;
+  --c: #1aaa15;
+  position: absolute;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  border-top-left-radius: 100%;
+  border-left: 2vmin solid var(--c);
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--sky));
+  transform-origin: bottom center;
+  margin-left: 169px;
+  margin-bottom: 93px;
+}
+
+
+.land{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100px;
+  background: rgb(159,255,0);
+  background: linear-gradient(180deg, rgba(159,255,0,0.137) 0%, rgba(104,207,0,1) 13%, rgba(29,158,0,1) 52%, rgba(54,45,0,1) 100%);
+  background-position: center;
+  overflow-x: hidden;
+  background-size: cover;
+  padding: 0px 50% 0px;
+  width: 100%;
+}
